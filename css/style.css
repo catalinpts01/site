@@ -1,0 +1,341 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+/* start reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-responsive {
+  display: block; /* scoate spatiul gol de sub poza */
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+/*end reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 900;
+}
+p {
+  color: #8f8f8f;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+::-webkit-scrollbar-thumb {
+  background: #4700d8;
+}
+/* SECTIONS BACKGROUND */
+.coloured-section {
+  background-color: #4700d8;
+  color: #fff;
+}
+.white-section {
+  background-color: #fff;
+}
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.container-fluid {
+  padding: 7% 15%;
+}
+/* Title section */
+#title {
+  background: linear-gradient(#4700d8, #ff85b3);
+}
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.fa-google-play,
+.fa-apple {
+  padding-right: 5px;
+}
+/* Navigation bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 3rem;
+}
+.nav-link {
+  font-size: 1.6rem;
+  color: #8f8f8f;
+}
+.nav-link:hover {
+  color: inherit;
+}
+.logo {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* download buttons */
+.dwn-btn {
+  margin: 5% 3% 5% 0;
+}
+.title-div {
+  margin-top: 7rem;
+}
+/* title image */
+.title-img {
+  width: 70%;
+  margin-left: 17rem;
+}
+/* features section */
+#features {
+  position: absolute;
+  z-index: 99;
+  top: 60%;
+  width: 100%;
+}
+.feature-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.feature-box {
+  padding: 4rem;
+}
+
+/* Testimonials section */
+#testimonials {
+  margin-top: 10rem;
+}
+
+.section-heading {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #4700d8;
+  padding-bottom: 30px;
+}
+.press-logo {
+  width: 12.5%;
+  margin: 20px 50px 20px;
+}
+
+.arrow {
+  background-color: #000;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 50px;
+}
+.price-text {
+  line-height: 1.5;
+}
+.pricing-col {
+  /* */
+  padding: 3% 2%;
+}
+.card {
+  border-radius: 7px;
+  background-color: rgba(223, 223, 222, 0.3);
+}
+#cta {
+  background: linear-gradient(#4700d8, #ff85b3);
+}
+.cta-dwn-btn {
+  margin: 0 1rem;
+}
+.cta-h3 {
+  margin-bottom: 2.5rem;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-outline-light:hover,
+.btn-light:hover {
+  background-color: transparent;
+  border-color: #000;
+}
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .title-div {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    width: 500px;
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+  .navbar-brand {
+    font-size: 4.3rem;
+  }
+  .big-heading {
+    font-size: 4.6rem;
+  }
+  #title .btn {
+    font-size: 2.2rem;
+  }
+  #features {
+    position: static;
+    font-size: 2.6rem;
+  }
+  .feature-title {
+    font-size: 3rem;
+  }
+
+  .testimonial-text {
+    font-size: 3.3rem;
+  }
+  .testimonial-img {
+    width: 100px;
+  }
+  .price-title {
+    font-size: 2.6rem;
+  }
+  #cta .btn {
+    font-size: 2.2rem;
+  }
+  #footer {
+    font-size: 2.6rem;
+  }
+  /* em {
+    font-size: 2rem;
+  } */
+  .card-header h3,
+  .card-body,
+  .price-text,
+  .price-btn {
+    font-size: 2.2rem;
+  }
+  #pricing h2 {
+    font-size: 2.6rem;
+  }
+  #pricing p {
+    font-size: 2.4rem;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+  .navbar-toggler {
+    width: 3rem;
+    height: 3rem;
+  }
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-ul.show {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 5.5rem;
+  }
+  .nav-ul li a {
+    color: #fafafa;
+  }
+  .hamburger {
+    display: block;
+    font-size: 2.2rem;
+    color: #fff;
+  }
+  .nav-item {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #features {
+    inset: unset;
+  }
+  #testimonials {
+    margin-top: 30rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  #features {
+    inset: unset;
+  }
+  #testimonials {
+    margin-top: 30rem;
+  }
+  .navbar-nav {
+    margin-left: 50rem;
+  }
+  .carousel-item {
+    margin-top: 10rem;
+  }
+}
